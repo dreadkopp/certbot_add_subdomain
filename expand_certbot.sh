@@ -27,4 +27,4 @@ echo "Please enter the new domain you want to add to that certificate:"
 read newdomain
 alldomains="${existing},${newdomain}"
 
-certbot certonly --cert-name ${certname} -d ${alldomains} --dry-run
+certbot certonly --cert-name ${certname} -d ${alldomains}
